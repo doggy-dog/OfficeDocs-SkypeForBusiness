@@ -33,6 +33,9 @@ Users hosted on Exchange Online Dedicated (Legacy) must be synchronized to Azure
 
 Users with mailboxes hosted on-premises must be synchronized to Azure Active Directory. They can make use of all the features in the above scenario, but additionally they can also change the user profile picture (if the Outlook on the web mailbox policy allows them to do so), and manage meetings, providing Exchange Server 2016 (Cumulative Update 3), or later, is running on-premises with OAuth configured (preferably via the Exchange Hybrid Configuration Wizard) as described in [Configure OAuth authentication between Exchange and Exchange Online organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). To enable calendar delegation for these users, you must also complete steps 2-3 as described in [Configure Integration and OAuth between Skype for Business Online and Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises); these steps will provide the Teams scheduling application the required permissions to confirm delegate permissions.   
 
+> [!NOTE]
+> If members of a channel, for which a Team meeting is being scheduled for, would like to receive email invitation for the meeting also (not only in-teams-channel notification), they would need to subscribe to the O365 group mailbox in their Inbox from Outlook. This feature is only supported from Exchange 2016 CU5 and above.
+
 The following table provides a helpful quick reference to feature availability based on the Exchange environment.
 
 > [!NOTE]
